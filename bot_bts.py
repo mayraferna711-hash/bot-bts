@@ -127,3 +127,4 @@ with sync_playwright() as p:
             print("Error general:", e)
 
         time.sleep(random.randint(5, 8))
+# redeploy
