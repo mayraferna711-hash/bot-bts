@@ -80,10 +80,7 @@ def check_tickets(page, url):
 
 
 with sync_playwright() as p:
-    browser = p.chromium.launch(
-    headless=True,
-    args=["--no-sandbox", "--disable-setuid-sandbox"]
-)
+    browser = p.firefox.launch(headless=True)
 
     context = browser.new_context(
         user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36",
