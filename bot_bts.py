@@ -7,8 +7,10 @@ from colorama import Fore, Style, init
 
 init(autoreset=True)
 
-TOKEN = "PON_AQUI_TU_TOKEN"
-CHAT_ID = "7064367672"
+import os
+
+TOKEN = os.getenv("TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 URLS = {
     "Colombia": "https://www.ticketmaster.co/event/bts-world-tour-2026",
